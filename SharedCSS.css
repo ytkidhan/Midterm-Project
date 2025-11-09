@@ -1,0 +1,188 @@
+/*---通用---*/
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#HomeNavbar
+{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+
+    height: 5vh;                    
+    background: url("LobbyBackground.jpg") no-repeat bottom / 100% 100vh;
+
+}
+#HomeNavbar li 
+{
+    flex: 1;
+}
+#HomeNavbar li a 
+{
+    display: block;
+    
+    background: transparent;
+
+    padding: 0 16px;
+    height: 100%;
+    border: 1px solid transparent;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 5vh;
+    color: white;
+    
+}
+#HomeNavbar li a:hover 
+{
+    border: 1px solid white;
+}
+
+
+/*---Home專屬---*/
+#Lobby
+{
+    height: 95vh;                   
+    background: url("LobbyBackground.jpg") no-repeat top / 100% 100vh;
+
+    display: flex;
+    flex-direction: column;         /* 垂直排列 */
+    justify-content: center;        /* 垂直置中 */
+    align-items: center;            /* 水平置中 */
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+/*---About專屬---*/
+.AllContent
+{
+    position: relative;
+}
+#Personal_Info
+{
+    height: 70vh;
+    width: 50vh;
+
+    background-color:#e0e0e0;
+    border:5px inset ;
+
+    position:absolute;
+    top:80px;
+    left:80px;
+
+    text-align: center;
+}
+
+#Personal_Content
+{
+    height: 70vh;
+    width: 100vh;
+
+    background-color:#e0e0e0;
+    border:5px inset ;
+
+    position:absolute;
+    top:80px;
+    right:80px;
+
+    text-align: center;
+}
+
+/*---Showcase專屬---*/
+#GalaxyTable 
+{
+    border: 1px solid black;
+    /*border-collapse: collapse;*/
+    /*width: 700px; /* 課表整體寬度你可調整 */
+    text-align: center;
+    font-size: 16px;
+    margin: 20px auto;
+}
+#GalaxyTable th, td 
+{
+    border: 1px solid black;
+    /*padding: 8px; /* 保留空間 */
+    /*min-width: 90px; /* 每欄最小寬度 */
+    height: 40px; /* 每格高度 */
+}
+#GalaxyTable th
+{
+    background-color: azure;
+}
+
+
+#Galaxy_Photo_Container
+{
+    width:100vh;
+    height:70vh;
+
+    border:5px inset ;
+    margin: 20px auto;
+    background-color: red;
+}
+#Galaxy_Photo
+{
+    width:100vh;
+    height:70vh;
+}
+
+
+/*---Gallery專屬---*/
+#NGC_6611_Container
+{
+    margin: 20px auto;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: 5px inset azure;
+}
+#NGC_6611
+{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    display: block;
+}
+.overlay
+{
+    position:relative;
+    width: 300px;
+    height: 400px;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+#NGC_6611_webber
+{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    display: block;
+}
+#Infrared
+{
+    position: absolute;
+    bottom: 15%;
+    left: 42%;
+    color:red;
+}
+#NGC_6611_Container:hover .overlay
+{
+    opacity:1;
+}
+
+
+#M16_Container
+{
+    width: 1024px;
+    height: 576px;
+    background-color: blue;
+    margin: 20px auto;
+}

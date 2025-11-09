@@ -1,0 +1,80 @@
+<head>
+    <title>Midterm Project</title>
+    <link rel="stylesheet"  href="SharedCSS.css">
+    <style>
+        section
+        {
+            text-align: center;
+        }
+    </style>
+    <script src="Showcase.js" defer></script>
+</head>
+
+
+<body>
+
+
+    <ul id="HomeNavbar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Showcase.html" style="background-color: rgba(255, 255, 255, 0.2)">Showcase</Canvas></a></li>
+        <li><a href="Canvas.html">Canvas</a></li>
+    </ul>
+
+    <section>
+        <h1>Galaxy Compare</h1>
+        <table id="GalaxyTable">
+            <tr>
+                <th></th>
+                <th>銀河系</th>
+                <th>仙女座星系</th>
+            </tr>
+            <tr>
+                <th>直徑</th>
+                <td>100,000 光年</td>
+                <td>220,000 光年</td>
+            </tr>
+            <tr>
+                <th>質量</th>
+                <td>1 兆 太陽質量</td>
+                <td>1~1.5 兆 太陽質量</td>
+            </tr>
+        </table>
+    
+    
+    
+    <h4>表格寬度</h4>
+    <button type="button" onclick="changeWidth('200px')">200px</button>
+    <button type="button" onclick="changeWidth('500px')">500px</button>
+
+    <h4>邊框寬度</h4>
+    <button type="button" onclick="changeBorder('1px')">1px</button>
+    <button type="button" onclick="changeBorder('10px')">10px</button>
+    <button type="button" onclick="changeBorder('20px')">20px</button>
+
+    <h4>表格背景色</h4>
+    <button type="button" onclick="changeColor()">change color</button>
+
+    <h4>重置</h4>
+    <button type="button" onclick="resetTable()">reset</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <h1>Galaxy Photo</h1>
+        <div id="Galaxy_Photo_Container">
+            <img id="Galaxy_Photo" src="Milky Way.jpg">
+        </div>
+        <span id="Galaxy_Name"></span>
+        <br>
+        <button id="Prev" type="button">Prev</button>
+        <span id="counter" aria-live="polite">Image 1 of 5</span>
+        <button id="Next" type="button">Next</button>
+    </section>
+
+</body>
+
+
+
